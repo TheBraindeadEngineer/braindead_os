@@ -1,11 +1,10 @@
 #![no_std]
 #![feature(abi_x86_interrupt)]
 
-use pc_keyboard;
-
 pub mod vga_buffer;
 pub mod interrupts;
 pub mod gdt;
+pub mod memory;
 
 pub fn init(){
     gdt::init();
